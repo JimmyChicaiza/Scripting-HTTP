@@ -1,15 +1,12 @@
 var https = require("https");
 
-
-
-
 var requestOptions = {
     host: "sytantris.github.io",
     path: "/http-examples/step5.html"
 };
 
 module.exports = function getHtml (options, callback) {
-        var dataAppend = "";
+    var dataAppend = "";
 
     https.get(requestOptions, function(response) {
         response.setEncoding("utf8");
