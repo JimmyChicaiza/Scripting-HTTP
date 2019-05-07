@@ -1,4 +1,4 @@
-var https = require('./http-functions');
+var https = require('../http-functions');
 
 function printHTML (html) {
     console.log(html.toLowerCase());
@@ -10,4 +10,4 @@ var requestOptions = {
 };
 
 
-https.getHTML(requestOptions, printHTML);
+getHTML(requestOptions, printHTML);

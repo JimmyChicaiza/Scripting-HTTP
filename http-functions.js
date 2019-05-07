@@ -5,7 +5,7 @@ var requestOptions = {
     path: "/http-examples/step5.html"
 };
 
-module.exports = function getHtml (options, callback) {
+module.exports = function getHTML (options, callback) {
     var dataAppend = "";
 
     https.get(requestOptions, function(response) {
@@ -22,7 +22,7 @@ module.exports = function getHtml (options, callback) {
 });
 }
 
-function printHTML (html) {
+function printHTML(html) {
     console.log(html);
 }
 
